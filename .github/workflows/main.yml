@@ -9,9 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build project
-      run: yarn docs:build
-
+    
     - name: Install coscmd
       run: sudo pip install coscmd
     - name: Configure coscmd
