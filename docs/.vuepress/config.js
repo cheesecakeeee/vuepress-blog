@@ -1,5 +1,6 @@
 module.exports = {
   title: 'Eudora Cheng',
+  base: '/docs/.vuepress/dist/',
   description: 'just another blog',
   themeConfig: {
     nav: [
