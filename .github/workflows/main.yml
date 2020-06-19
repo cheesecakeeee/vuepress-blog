@@ -16,7 +16,7 @@ jobs:
         node-version: "12.x"
 
     - name: Build project
-      run: yarn docs:build
+      run: yarn && yarn build
     
     - name: Install coscmd
       run: sudo pip install coscmd
