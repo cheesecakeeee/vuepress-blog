@@ -9,6 +9,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+      
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "12.x"
+
+    - name: Build project
+      run: yarn docs:build
     
     - name: Install coscmd
       run: sudo pip install coscmd
